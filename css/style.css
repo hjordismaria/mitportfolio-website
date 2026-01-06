@@ -5,6 +5,10 @@
   --light: #fbe99d;
 }
 
+body {
+  background-color: #f7efe2;
+}
+/*colors*/
 .card.blue {
   --bg: var(--blue);
 }
@@ -39,4 +43,15 @@
 }
 .btn.light:hover {
   color: #fb9dfb;
+}
+
+/*img style*/
+.cardphoto {
+  overflow: hidden;
+  background: #ddd;
+}
+.imgfit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

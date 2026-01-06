@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+/*grid for cards*/
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  min-height: 360px;
+}
+
+.rotate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 26px;
+}
+
+@media (min-width: 800px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 100px auto;
+  }
+  .card {
+    grid-template-columns: 90px 1fr;
+    grid-template-rows: 320px 240px;
+    min-height: auto;
+  }
+
+  /* photo spans both columns on top */
+  .cardphoto {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  /* label + panel sit on bottom row */
+  .rotate {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 40px;
+  }
+
+  .button {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .btn {
+    padding: 20px 90px;
+    letter-spacing: 2px;
+  }
+}
