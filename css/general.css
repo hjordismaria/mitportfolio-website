@@ -42,10 +42,60 @@ h1 {
   padding: 1em;
 }
 
+h2 {
+  text-align: center;
+  padding: 1em;
+}
+
 p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  margin: 30px;
+  text-align: center;
+}
+.button-website {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.btn-website {
+  margin-top: 20px;
+  display: inline-block;
+  border: 2px solid #ff0000;
+  padding: 20px 40px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  color: red;
+}
+.tema-text h2 {
+  margin: 0 0 8px 0;
+  font-family: "AlbertSans", sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  text-align: start;
+}
+.tema-text p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: start;
+  margin-right: 20px;
+}
+.tema-menus a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  color: #486284;
+}
+.tema-menus a:hover {
+  color: #fb9dfb;
 }
 
 @media (min-width: 800px) {
