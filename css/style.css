@@ -1,0 +1,42 @@
+:root {
+  --blue: #e5edf0;
+  --dark: #a1afb8;
+  --cream: #b1a296;
+  --light: #fbe99d;
+}
+
+.card.blue {
+  --bg: var(--blue);
+}
+.card.cream {
+  --bg: var(--cream);
+}
+
+.button {
+  background: var(--bg);
+}
+
+.rotate {
+  background: var(--bg);
+}
+
+.card.blue .rotate {
+  color: var(--dark);
+}
+.card.cream .rotate {
+  color: var(--light);
+}
+
+.btn.dark {
+  color: var(--dark);
+}
+.btn.light {
+  color: var(--light);
+}
+
+.btn.dark:hover {
+  color: #c32732;
+}
+.btn.light:hover {
+  color: #fb9dfb;
+}
