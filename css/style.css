@@ -55,3 +55,8 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.aboutmephoto {
+  width: 400px;
+  height: 500px;
+  margin: 20px;
+}

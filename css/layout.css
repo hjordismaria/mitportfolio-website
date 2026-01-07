@@ -42,10 +42,9 @@ img {
 .grid-tema {
   margin: 60px;
   display: grid;
-  gap: 20px; /* spacing between blocks */
+  gap: 20px;
 }
 
-/* the “component”: text + images */
 .tema-block {
   display: grid;
   gap: 12px;
@@ -65,7 +64,6 @@ img {
   background-color: rgba(0, 0, 0, 0.15); /* subtle */
 }
 
-/* remove line after last block */
 .tema-block:last-child::after {
   display: none;
 }
@@ -84,6 +82,27 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+.media-5 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.media-6 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.media-7 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.media-9 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.media-10 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+}
 
 /* right column (image area) */
 .tema-media {
@@ -95,6 +114,10 @@ img {
 }
 .tema-media.media-4 img {
   height: 300px;
+}
+.tema-media.media-8 img {
+  height: 80%;
+  width: 80%;
 }
 
 /* image sizing: keep them from becoming huge */
@@ -162,6 +185,9 @@ main > nav .tema-menus {
 
   .media-4 {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .media-6 {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .tema-media.media-lofi img {
