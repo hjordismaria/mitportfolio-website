@@ -1,17 +1,14 @@
-/* ========== PORTFOLIO GRID ========== */
 .portfolio-grid {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-/* Mobile cards (your reference layout) */
 .card {
   display: grid;
-  grid-template-columns: 70px 1fr 1fr; /* label | text/button | image */
+  grid-template-columns: 70px 1fr 1fr;
   min-height: 360px;
 }
 
-/* Keep placements stable (no random grid auto placement) */
 .rotate {
   grid-column: 1;
 }
@@ -23,14 +20,12 @@
   grid-column: 3;
 }
 
-/* Center rotate area box */
 .rotate {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Button panel: button stays centered */
 .button {
   display: flex;
   align-items: center;
@@ -38,18 +33,16 @@
   padding: 20px;
 }
 
-/* Title inside button panel (you wanted near image with 1cm-ish gap) */
 .cardtitle {
   position: absolute;
   top: 20px;
-  right: 0.5cm; /* tweak to taste */
+  right: 0.5cm;
   text-align: right;
   margin: 0;
   font-size: 28px;
   letter-spacing: 2px;
 }
 
-/* Card image area */
 .cardphoto {
   overflow: hidden;
 }
@@ -60,7 +53,6 @@
   object-fit: cover;
 }
 
-/* ========== TEMA PAGE LAYOUT ========== */
 .grid-tema {
   margin: 60px;
   display: grid;
@@ -182,36 +174,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-.media-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-}
-.media-5 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-.media-6 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-.media-7 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-.media-9 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-.media-10 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-}
 
 /* Tema images */
 .tema-media {
@@ -281,18 +243,10 @@ main nav .tema-menus {
   .tema-media img {
     height: 240px;
   }
-  .tema-media.media-lofi img {
-    height: 400px;
-  }
-  .tema-media.media-4 img {
-    height: 400px;
-  }
+
   .tema-menus {
     display: flex;
     gap: 32px;
-  }
-  .media-6 {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .portfolio-grid {
@@ -301,7 +255,6 @@ main nav .tema-menus {
     margin: 100px auto;
   }
 
-  /* Desktop card layout (your original desktop) */
   .card {
     grid-template-columns: 90px 1fr;
     grid-template-rows: 320px 240px;
