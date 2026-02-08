@@ -13,13 +13,13 @@ header {
   height: 60px;
 }
 
-nav {
+header nav {
   display: flex;
   align-items: center;
 }
 
 /* Desktop menu */
-.menu {
+header .menu {
   display: flex;
   list-style: none;
   gap: 20px;
@@ -50,7 +50,7 @@ nav {
 
 /* Mobile */
 @media (max-width: 799px) {
-  .menu {
+  header .menu {
     display: none;
   }
 
@@ -106,7 +106,7 @@ nav {
   }
 
   /* Dropdown menu */
-  nav.active .menu {
+  header nav.active .menu {
     display: block;
     background-color: #dccbbd;
     position: absolute;

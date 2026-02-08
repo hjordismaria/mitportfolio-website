@@ -54,7 +54,12 @@ body {
   width: 100%;
   margin: 20px 0;
 }
-
+.footer-logo {
+  padding: 2em;
+  margin: 2em;
+  justify-content: center;
+  justify-items: center;
+}
 .about-me-block {
   background-color: var(--cream);
   padding: 3em;

@@ -234,22 +234,34 @@
 }
 
 /* Tema nav wrapper centering */
-main nav {
-  width: 100%;
-}
 
-main > nav {
+main nav {
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 2em;
+  list-style: none;
 }
 
-main > nav .tema-menus {
+main nav .tema-menus {
   width: fit-content;
   margin: 0 auto;
 }
-
+.tema-menus {
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 2px;
+  margin: 40px 0;
+}
+.tema-menus a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 12px 16px;
+}
 /* ========== RESPONSIVE ========== */
 @media (max-width: 799px) {
   .tema-block {
@@ -275,7 +287,10 @@ main > nav .tema-menus {
   .tema-media.media-4 img {
     height: 400px;
   }
-
+  .tema-menus {
+    display: flex;
+    gap: 32px;
+  }
   .media-6 {
     grid-template-columns: repeat(3, 1fr);
   }

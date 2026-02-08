@@ -109,25 +109,25 @@ p {
 /* Website button (special button you had) */
 .btn-website {
   text-decoration: none;
-  color: #c32732;
+  color: black;
 }
 
 .button-website {
   margin-top: 20px;
   display: inline-block;
-  border: 2px solid #c32732;
+  border: 2px solid black;
   padding: 20px 40px;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-decoration: none;
-  color: #c32732;
+  color: black;
   cursor: pointer;
 }
 
 .button-website:hover {
-  background-color: #fb9dfb;
-  color: #ffffff;
+  background-color: #4178df;
+  border: #4178df;
 }
 
 /* Small helpers from your file */
